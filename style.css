@@ -1,0 +1,160 @@
+@import url('https://fonts.googleapis.com/css2?family=Lobster&family=Murecho:wght@100&family=Old+Standard+TT:wght@400;700&display=swap');
+
+@media (min-width: 576px) {
+body{
+font-family: 'Lobster', cursive;
+font-family: 'Murecho', sans-serif;
+font-family: 'Old Standard TT', serif;
+background-color: rgb(165, 187, 206);
+overflow-y: scroll;
+}
+
+#input-city{
+    font-size: x-large;
+    font-weight: bolder;
+}
+
+.navbar{
+    background-color: rgb(51, 16, 131);
+    background-image:
+      linear-gradient(
+        to right,
+        rgb(20, 94, 231),
+        rgb(33, 13, 87) 50%
+      );
+      
+  
+}
+
+.navbar-text{
+    color: white;
+    font-weight: 700;
+    margin: 15px;;
+    font-size: xxx-large;
+    margin: 0 auto 0 auto;
+    
+       
+}
+
+.btn{
+    margin: 1px;
+    width: 200px;
+    ;
+
+}
+
+.container {
+    display:flex;
+    margin: 275px;;
+    border: solid;
+    box-shadow: 15px 10px 20px yellow;
+    flex-direction: space-around;
+    width: 150%;
+    height: 370px;
+    margin-top: auto;
+    background-color: yellow;
+        
+
+}
+  
+.date-container {
+    font-size: small;
+          
+ }
+
+
+.date-container{
+    font-weight: small;
+}
+
+.date-container .time{
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.date-container, #am-pm{
+font-size: 15px;
+margin-left: 20px;
+}
+
+.date-container .date{
+font-size: 20px;
+font-weight: bold;
+}
+
+#current-temp {
+    display:flex;
+    flex-direction: column;
+    border-radius: 4px;
+    border: 2px solid yellow;
+    align-items: center;
+    justify-content: left;
+    bottom:3px;
+   }
+
+   /* //Big Monday graphic// */
+#current-temp{ 
+height: 80%;
+width:30%;
+}
+
+.future-forecast, .weather-forecast-stuff, .wx-forecast, .day, .temp {
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    border: solid;
+    flex-direction: space-around;
+    
+}
+   /* //Big Forecast graphic -move down// */
+.future-forecast, .wx-forecast, .current-temp .wx-forecast{
+background: rgb(165, 187, 206);
+   height: 500px;
+    color:black;
+    width: 1300px;
+    padding: 1em;
+    border: solid;
+    margin:10px
+    
+  
+/* //forecast boxes// */
+}
+#weather-forecast{
+    height: 100px;
+    width: 300px;
+   
+}
+
+#current-temp{
+    background: lightgray;
+}
+
+.future-forecast .today .day {
+     padding: 05px 10px;
+     background:yellow;
+     border-radius: 10px;
+     text-align: center;
+}
+
+.future-forecast .today .temp .wx-forecast .weather-forecast-stu{
+    font-size: 15px;
+}
+
+.future-forecast .weather-forecast{
+    display:flex;
+    
+}
+/* // Extra small devices (portrait phones, less than 576px)
+// No media query for `xs` since this is the default in Bootstrap
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) { ... }
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) { ... }
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) { ... }
+
+// Extra large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) { ... } */}
