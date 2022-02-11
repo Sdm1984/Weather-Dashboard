@@ -75,7 +75,7 @@ big yellow box */
 }
 
 .date-container .time{
-    font-size: 18px;
+    font-size: 25px;
     font-weight: bold;
 }
 
@@ -97,6 +97,10 @@ font-weight: bold;
     align-items: center;
     justify-content: center;
       
+}
+
+#five-day{
+    margin-top: 15px;
 }
 
 .future-forecast, .weather-forecast-stuff, .day, .temp {
