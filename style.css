@@ -22,7 +22,7 @@ overflow-y: scroll;
         rgb(20, 94, 231),
         rgb(33, 13, 87) 50%
       );
-      width: 114%;
+      width: 108%;
       
   
 }
@@ -116,11 +116,11 @@ justify-content: space-between;
 
    /* //Big Monday graphic// */
 #current-temp{ 
-height: 80%;
-width:30%;
+height: 75%;
+width:25%;
 }
 
-.future-forecast, .weather-forecast-stuff, .wx-forecast, .day, .temp {
+.future-forecast, .weather-forecast-stuff, .day, .temp {
     display: flex;
     flex-direction: column;
     margin: 12px;
@@ -130,7 +130,7 @@ width:30%;
     
 }
    /* //Big Forecast graphic -move down// */
-.future-forecast, .wx-forecast, .current-temp .wx-forecast .weather-forecast-stuff{
+.future-forecast, .wx-forecast, .current-temp .weather-forecast-stuff{
 background: rgb(165, 187, 206);
    height: 500px;
     color:black;
@@ -145,8 +145,14 @@ background: rgb(165, 187, 206);
 .wx-forecast {
     height: 60px;
     width: 350px;
+    display: flex;
 
        
+}
+.wx-forecast >div{
+    display: flex;
+    border:solid pink;
+    
 }
 
 #current-temp{
