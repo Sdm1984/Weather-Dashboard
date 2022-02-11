@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lobster&family=Murecho:wght@100&family=Old+Standard+TT:wght@400;700&display=swap');
 
-@media (min-width: 576px) {
+@media (min-width: 768px) {
 body{
 font-family: 'Lobster', cursive;
 font-family: 'Murecho', sans-serif;
@@ -22,6 +22,7 @@ overflow-y: scroll;
         rgb(20, 94, 231),
         rgb(33, 13, 87) 50%
       );
+      width: 114%;
       
   
 }
@@ -29,7 +30,6 @@ overflow-y: scroll;
 .navbar-text{
     color: white;
     font-weight: 700;
-    margin: 15px;;
     font-size: xxx-large;
     margin: 0 auto 0 auto;
     
@@ -45,52 +45,74 @@ overflow-y: scroll;
 
 .container {
     display:flex;
-    margin: 275px;;
+    margin: 300px;;
     border: solid;
-    box-shadow: 15px 10px 20px yellow;
+    box-shadow: 15px 10px 30px yellow;
     flex-direction: space-around;
-    width: 150%;
+    width: 300%;
     height: 370px;
     margin-top: auto;
     background-color: yellow;
+    border-radius: 10px;
         
 
 }
   
+
+.current-data{
+    display:flex;
+       flex-wrap: wrap;
+}
+/* 
+big yellow box */
 .date-container {
-    font-size: small;
-          
+     font-weight:200px;
+    
+   
  }
 
+ #current-weather-items{
+     font-size: medium;
+ }
 
 .date-container{
-    font-weight: small;
+   width: 700px;
+       
+   
 }
 
 .date-container .time{
-    font-size: 15px;
+    font-size: 18px;
     font-weight: bold;
 }
 
-.date-container, #am-pm{
-font-size: 15px;
+.date-container #am-pm{
+font-size: 10px;
 margin-left: 20px;
 }
 
-.date-container .date{
-font-size: 20px;
+.date-container .date {
+font-size: 25px;
 font-weight: bold;
 }
 
-#current-temp {
+.current-data .others .weather-forecast-stuff{
+display: flex;
+justify-content: space-between;
+}
+
+.future-forecast .today {
     display:flex;
+    padding: 15px;
+    padding-right: 50px;
     flex-direction: column;
-    border-radius: 4px;
-    border: 2px solid yellow;
+    border-radius: 10px;
+    border: 1px solid yellow;
     align-items: center;
-    justify-content: left;
-    bottom:3px;
-   }
+    justify-content: center;
+    font-size: medium;
+   
+}
 
    /* //Big Monday graphic// */
 #current-temp{ 
@@ -101,28 +123,30 @@ width:30%;
 .future-forecast, .weather-forecast-stuff, .wx-forecast, .day, .temp {
     display: flex;
     flex-direction: column;
-    margin: 10px;
+    margin: 12px;
     border: solid;
     flex-direction: space-around;
+    border-radius: 10px;
     
 }
    /* //Big Forecast graphic -move down// */
-.future-forecast, .wx-forecast, .current-temp .wx-forecast{
+.future-forecast, .wx-forecast, .current-temp .wx-forecast .weather-forecast-stuff{
 background: rgb(165, 187, 206);
    height: 500px;
     color:black;
     width: 1300px;
-    padding: 1em;
+    padding: 2em;
     border: solid;
-    margin:10px
-    
+    margin: 18px;
+}
   
 /* //forecast boxes// */
-}
-#weather-forecast{
-    height: 100px;
-    width: 300px;
-   
+
+.wx-forecast {
+    height: 60px;
+    width: 350px;
+
+       
 }
 
 #current-temp{
@@ -130,20 +154,62 @@ background: rgb(165, 187, 206);
 }
 
 .future-forecast .today .day {
-     padding: 05px 10px;
+     padding: 5px 15px;
      background:yellow;
-     border-radius: 10px;
+     border-radius: 50px;
      text-align: center;
 }
 
-.future-forecast .today .temp .wx-forecast .weather-forecast-stu{
-    font-size: 15px;
+.future-forecast.today .temp{
+    font-size: medium;
+    padding-top: 15px;
 }
 
-.future-forecast .weather-forecast{
-    display:flex;
+.future-forecast .weather-forecast-stuff{
+    display: flex;
+}
+
+/* yellow boxes tues-sat */
+.wx-forecast .weather-forecast-stuff{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    border: 1px solid black;
+    padding: 15px;;
+    border-radius: 10px;
+    background: yellow;
+}
+
+.wx-forecast .weather-forecast-stuff .day{
+    padding:5px 15px;
+    text-align: center;
+    border-radius: 50px;
+}
+
+.wx-forecast .weather-forecast-stuff .temp{
+    font-weight: 100;
+    font-size: medium;
     
 }
+
+.future-forecast{
+    justify-content: start;
+    align-items: none;
+    overflow-y: scroll;
+}
+
+.future-forecast .today .temp{
+    font-size: medium;
+}
+
+.current-data .others{
+    padding:12px;
+}
+
+   
+
 /* // Extra small devices (portrait phones, less than 576px)
 // No media query for `xs` since this is the default in Bootstrap
 
