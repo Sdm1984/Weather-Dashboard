@@ -8,7 +8,7 @@ overflow-y: scroll;
 }
 
 #input-city{
-    font-size: x-large;
+    font-size: xx-large;
     font-weight: bolder;
 }
 
@@ -64,7 +64,22 @@ overflow-y: scroll;
 big yellow box */
 .date-container {
      font-weight:200px;
-    
+}
+
+.sidenav{
+    height: 100%; 
+    width: 160px; /* Set the width of the sidebar */
+    left: auto;
+    padding-top: 20px;
+}
+
+.sidenav a {
+    padding: 6px 8px 6px 16px;
+    text-decoration: none;
+    font-size: 25px;
+    color: black;
+    display: block;
+  }
    
  }
 
