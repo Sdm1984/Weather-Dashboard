@@ -10,7 +10,7 @@ overflow-y: scroll;
 #input-city{
     font-size: xx-large;
     font-weight: bolder;
-}
+    }
 
 .navbar{
     background-color: rgb(32, 111, 184);
@@ -37,9 +37,8 @@ overflow-y: scroll;
 .btn{
     margin: 1px;
     width: 200px;
-    ;
-
-}
+    font-size: large;
+ }
 
 .container {
     display:flex;
@@ -49,7 +48,7 @@ overflow-y: scroll;
     flex-direction: space-around;
     width: 300%;
     height: 370px;
-    margin-top: auto;
+    margin-top:auto;
     background-color: yellow;
     border-radius: 10px;
         
@@ -132,6 +131,7 @@ font-weight: bold;
 .future-forecast, .wx-forecast, .current-temp .weather-forecast-stuff{
     background: yellow;
     height: 400px;
+    width: 1200px;
     color:black;
     border: solid;
     box-shadow: 15px;

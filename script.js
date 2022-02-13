@@ -1,9 +1,24 @@
+//Weather Dashboard comments
 
+const API_KEY ='314ab9d4b0b9be7593d4189119cf468b';
 
-const APIKey ="314ab9d4b0b9be7593d4189119cf468b";
+const time = document.getElementById('time');
 
-//Weather App - Pseudocode 
+const date = document.getElementById('date');
 
+const currentTemp = document.getElementById('current-data');
+
+const currentWeatherItems = document.getElementById('current-weather-items');
+
+const weatherForecast = document.getElementById('future-forecast');
+
+ 
+
+const days = ['Sunday', 'Monday', 'Tuesday', 'Wednesday', 'Thursday', 'Friday', 'Saturday']
+
+const months = ['Jan', 'Feb', 'Mar', 'Apr', 'May', 'Jun', 'Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'];
+
+ 
 //SEARCH
 //Function: EVENT HANDLER
 //1. Read the value from the text box in a variable – create a var and read the value of the textbox into the var
@@ -11,8 +26,7 @@ const APIKey ="314ab9d4b0b9be7593d4189119cf468b";
 //3. Fetch the results
 //4. Call Function to update after results
 
-fetch(url)
-
+ 
 //Function: DoResults
 //1. Call function Add Search Term to Results
 //2. Call function Add Today’s Results
